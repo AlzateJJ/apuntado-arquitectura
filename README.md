@@ -8,8 +8,10 @@ El sistema ofrece partida única y Apuntado de rondas acumulativas. Se propone u
 
 Este repositorio se inicia desde cero, con historial propio. Reúne los artefactos académicos; no incluye el código del backend anterior. Las versiones se integran de forma incremental y se documentan en `docs/EVOLUCION.md`.
 
-## Versión 1 — alcance y antecedentes
+## Versión 2 — diseño y arquitectura de información
 
-Se incorporan los ADR-01 y ADR-02 del primer entregable y el antecedente de comunicación WebSocket. Son decisiones de partida para el diseño detallado.
+Se añaden ADR-03 a ADR-05, UML de componentes, modelos E-R Barker y clases de entidad con tipos y multiplicidades. Las fuentes están en `docs/models/` en formatos drawio y SVG; también hay PDF vectoriales y PNG.
 
-Las siguientes versiones incorporarán estilo y datos, código comprobable, gobernanza y riesgos, y el informe consolidado. En esta versión todavía no se entrega código ejecutable.
+`database/schema.sql` concreta once tablas y una vista de puntaje acumulado. Define PK/FK, perfiles inmutables y restricciones para liquidar rondas de forma consistente. Debe ejecutarse únicamente en una base vacía PostgreSQL 18.
+
+La siguiente versión incorporará el código de apoyo y sus pruebas. En esta versión las verificaciones ejecutables aún no están integradas.
