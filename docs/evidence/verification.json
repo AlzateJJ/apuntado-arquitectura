@@ -1,0 +1,24 @@
+{
+  "node": "v24.22.1",
+  "platform": "win32",
+  "checks": [
+    {
+      "name": "TypeScript",
+      "exitCode": 0,
+      "durationMs": 1176,
+      "output": ""
+    },
+    {
+      "name": "Dominio y aplicación",
+      "exitCode": 0,
+      "durationMs": 508,
+      "output": "✔ A vale 10; escaleras A23 y QKA válidas, KA2 inválida (0.866ms)\n✔ duplicados entre mazos válidos; misma carta física no se reutiliza (0.4135ms)\n✔ 4-3-3 y 5-5 independientes del orden visual (1.5421ms)\n✔ toque inclusivo de cinco y frontera de autoeliminación (1.2927ms)\n✔ toque 2+2 y 2+3; rechazo de 3+3 y de ocho pintas sin combinaciones (1.4303ms)\n✔ nueve pintas admiten toque; diez pintas dan +25 sin apilar +10 (2.9563ms)\n✔ Clásica termina en home sin movimientos de puntos (1.3349ms)\n✔ Apuntado conserva descuento aprobado y continúa con dos activos (1.3663ms)\n✔ +51 gana; único activo gana (1.3761ms)\n✔ reintento concurrente produce un acta y un evento (1.0218ms)\n✔ dos cierres distintos: solo uno se confirma (1.2454ms)\n✔ rechaza identidad ajena, turno incorrecto, versión antigua y cambio de payload (1.3185ms)\n✔ fallo previo al commit revierte estado, operación y outbox (0.7694ms)\n✔ toque rechazado no revela manos ni cambia puntos (0.7868ms)\n✔ outbox permanece pendiente si falla envío; reintento conserva eventId (1.029ms)\n✔ tercera estrategia de prueba se registra sin modificar CloseRound (0.2303ms)\nℹ tests 16\nℹ suites 0\nℹ pass 16\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 345.5467\n"
+    },
+    {
+      "name": "Esquema SQL",
+      "exitCode": 0,
+      "durationMs": 2048,
+      "output": "✔ SQL: DDL ejecutable, unicidad, FK, perfil inmutable, acumulación y rollback (1588.1416ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1905.7457\n"
+    }
+  ]
+}

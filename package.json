@@ -1,0 +1,32 @@
+{
+  "name": "apuntado-arquitectura",
+  "version": "1.0.0",
+  "description": "Diseño detallado, arquitectura de información y fitness functions de Apuntado",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.architecture.json",
+    "test:domain": "tsx --test tests/domain.test.ts",
+    "test:schema": "tsx --test tests/schema.test.ts",
+    "verify": "node scripts/verify.mjs",
+    "test:postgres": "tsx --test tests/postgres.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.9.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.12",
+    "@types/node": "24.19.2",
+    "@types/pg": "8.23.1",
+    "eslint": "10.13.0",
+    "tsarch": "5.4.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "private": true
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "design/src/**/*.ts",
+    "tests/domain.test.ts",
+    "tests/helpers.ts",
+    "tests/schema.test.ts",
+    "tests/postgres.test.ts"
+  ],
+  "exclude": [
+    "tests/fixtures"
+  ]
+}
