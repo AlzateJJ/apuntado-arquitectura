@@ -3,7 +3,10 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 const checks=[
   ['TypeScript','node_modules/typescript/bin/tsc','-p','tsconfig.architecture.json'],
   ['Dominio y aplicación','node_modules/tsx/dist/cli.mjs','--test','tests/domain.test.ts'],
+  ['Fitness functions','node_modules/tsx/dist/cli.mjs','--test','tests/architecture/fitness.test.ts'],
   ['Esquema SQL','node_modules/tsx/dist/cli.mjs','--test','tests/schema.test.ts'],
+  ['Complejidad estática','node_modules/eslint/bin/eslint.js','--config','eslint.architecture.config.mjs','design/src'],
+  ['Medición de complejidad','node_modules/tsx/dist/cli.mjs','scripts/complexity-report.ts']
 ];
 const results=[];
 for(const [name,...args] of checks){

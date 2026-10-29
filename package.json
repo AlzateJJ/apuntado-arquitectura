@@ -5,7 +5,10 @@
   "scripts": {
     "typecheck": "tsc -p tsconfig.architecture.json",
     "test:domain": "tsx --test tests/domain.test.ts",
+    "test:architecture": "tsx --test tests/architecture/fitness.test.ts",
     "test:schema": "tsx --test tests/schema.test.ts",
+    "lint:architecture": "eslint --config eslint.architecture.config.mjs design/src",
+    "metrics": "tsx scripts/complexity-report.ts",
     "verify": "node scripts/verify.mjs",
     "test:postgres": "tsx --test tests/postgres.test.ts"
   },

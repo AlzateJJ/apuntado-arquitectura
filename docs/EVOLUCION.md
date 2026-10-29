@@ -11,3 +11,7 @@ Se concretan el monolito modular del backend, la extensibilidad por estrategias,
 ## Versión 3 — código de apoyo y pruebas del cierre
 
 Se incorpora la base TypeScript del cierre de ronda: reglas, contratos, coordinación, persistencia y notificación. Se comprueban tipos, 16 pruebas de dominio/aplicación y una prueba del esquema. Se prepara una prueba de concurrencia y rollback con PostgreSQL real; su ejecución automática se integra en la siguiente versión.
+
+## Versión 4 — gobernanza y riesgos individuales
+
+Se añaden nueve fitness functions, controles negativos, análisis de complejidad por función y pipeline de GitHub Actions con PostgreSQL 18. El registro de Risk Storming documenta nueve riesgos y la adaptación individual de sus tres fases. La verificación local reúne 26 pruebas; CI añade una prueba de integración con PostgreSQL.
