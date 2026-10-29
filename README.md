@@ -49,6 +49,8 @@ La prueba `npm run test:postgres` requiere `ARCH_TEST_DATABASE_URL` apuntando a 
 
 Abrir los `.drawio` en diagrams.net. Los SVG y PDF son vectoriales. Los PNG están exportados a alta resolución para Word. `scripts/build_models.py` permite regenerarlos con Python, reportlab y pypdfium2; `scripts/build_report.py` crea el Word con python-docx y Pillow. El PDF consolidado se exportó con Microsoft Word y se inspeccionó página por página.
 
+El Word se genera en `docs/report/`. En Windows, `scripts/export_report.ps1` permite exportarlo con Microsoft Word mediante los parámetros `-InputDoc` y `-OutputPdf`, con rutas absolutas. `scripts/package_delivery.py --output CARPETA --ci-run ID` crea el ZIP desde el commit actual y exige que la ejecución de GitHub Actions indicada haya terminado correctamente para ese mismo commit. El empaquetado utiliza Python y pypdf.
+
 ## Alcance técnico
 
 La base implementa evaluación y liquidación de cierres, un coordinador con puertos, adaptadores transaccionales de memoria y PostgreSQL, una proyección de privacidad, un despachador de outbox y la decisión de navegación. La prueba de extensión añade una estrategia sintética sin cambiar el núcleo.
@@ -66,5 +68,3 @@ La fase de consenso se adapta a una revisión y priorización individual documen
 ## Evolución de la entrega
 
 Consultar [EVOLUCION.md](docs/EVOLUCION.md) para ver las cinco versiones integradas en este repositorio.
-
-En esta versión se integran gobernanza y riesgos. El informe consolidado de `docs/report/` se incorporará en la versión 5.

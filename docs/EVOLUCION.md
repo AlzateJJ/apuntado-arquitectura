@@ -15,3 +15,9 @@ Se incorpora la base TypeScript del cierre de ronda: reglas, contratos, coordina
 ## Versión 4 — gobernanza y riesgos individuales
 
 Se añaden nueve fitness functions, controles negativos, análisis de complejidad por función y pipeline de GitHub Actions con PostgreSQL 18. El registro de Risk Storming documenta nueve riesgos y la adaptación individual de sus tres fases. La verificación local reúne 26 pruebas; CI añade una prueba de integración con PostgreSQL.
+
+## Versión 5 — informe consolidado y entrega
+
+Se publica el informe PDF de 24 páginas y su Word editable, con enlaces al repositorio independiente e instrucciones de reproducción actualizadas. Se integra la trazabilidad de requisitos y las fuentes de consulta. El paquete ZIP se genera desde el estado final versionado y contiene el informe, los modelos, los ADR y las pruebas.
+
+Las versiones documentan la integración progresiva de los artefactos en este repositorio. Los ADR del primer entregable conservan su fecha y contexto originales.
